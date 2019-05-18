@@ -4,7 +4,8 @@
   "description": "node server to access giphy api and interact with mongo db",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development nodemon index.js"
   },
   "author": "Richard Ryan Garcia",
   "license": "ISC",
