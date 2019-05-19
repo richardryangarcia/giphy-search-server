@@ -9,7 +9,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 // set up mongo
-// mongoose.connect(mongoConfig.db ,{useNewUrlParser: true});
+mongoose.connect(mongoConfig.db ,{useNewUrlParser: true});
 
 //express set up
 const app = express();
