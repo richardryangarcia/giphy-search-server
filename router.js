@@ -12,4 +12,8 @@ module.exports = (app) => {
 
   app.post('/api/v1/register', Authentication.register);
 
+  //authorized endpoints
+  app.get('/api/v1/get-favorites', Authentication.verifyAuthToken, Authentication.getFavorites, Giphy.search_by_ids);
+  app.post('/api/v1/update-favorites', Authentication.verifyAuthToken, Authentication.updateFavorites);
+
 }

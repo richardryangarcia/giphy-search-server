@@ -9,7 +9,8 @@ const userSchema = new Schema({
   },
   firstName: String,
   lastName: String,
-  email: String
+  email: String,
+  favorites: [String]
 });
 
 //create model class
