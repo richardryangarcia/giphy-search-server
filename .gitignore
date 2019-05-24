@@ -1,5 +1,5 @@
 #config directory
-configs/
+constants/firebase.json
 
 # Logs
 logs
