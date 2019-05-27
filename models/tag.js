@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 
 //create tag model
 const tagSchema = new Schema({
-  title: String,
-  userUid: String,
-  gifs: [String]
+  gifId: String,
+  userId: String,
+  tags: [String]
 });
 
 //create model class

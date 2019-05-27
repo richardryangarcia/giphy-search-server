@@ -29,7 +29,7 @@ exports.verifyAuthToken = async (req, res, next) => {
   }
 }
 
-exports.verifyMongoUser = async (req, res, next) => {
+exports.getMongoUser = async (req, res, next) => {
   //look up User record in Mongo
   try {
     const user = await User.findOne({_id: res.currentUser._id});
